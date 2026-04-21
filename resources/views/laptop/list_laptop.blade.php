@@ -23,15 +23,10 @@
         <div class="row justify-content-center">
             <div class="col-md-11 main-container">
                 <div class="header-title">
-                    Hệ Thống Quản Lý Sản Phẩm 
+                    Quản Lý Sản Phẩm 
                 </div>
 
-                <div class="mb-4">
-                    <a href="{{ url('/order/create') }}" class="btn-add-green">
-                        <i class="fas fa-plus"></i> Thêm 
-                    </a>
-                </div>
-
+            
                 <table id="laptop-table" class="table table-bordered table-hover w-100">
                     <thead>
                         <tr>

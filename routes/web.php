@@ -18,8 +18,8 @@ Route::get('/testemail','App\Http\Controllers\OrderController@testemail');
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('laptop/theloai/{id}', function($id) {
-    return app(HomeController::class)->index(request()->merge(['id_danh_muc' => $id]));
-});
+    return app(HomeController::class)->index(request()->merge(['brand_id' => $id]));
+})->name('laptop.brand');
 require __DIR__ . '/auth.php';
 
 Route::get('/dashboard', function () {

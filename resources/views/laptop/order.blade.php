@@ -2,6 +2,17 @@
     <x-slot name='title'>
         Đặt hàng
     </x-slot>
+    @if(session('success'))
+        <script>
+            alert("{{ session('success') }}");
+        </script>
+    @endif
+
+    @if(session('error'))
+        <script>
+            alert("{{ session('error') }}");
+        </script>
+    @endif
     <style>
         .book-table {
             border-collapse: collapse; 
@@ -19,7 +30,6 @@
 
     <div>
         <div style='color:#15c; font-weight:bold;font-size:15px;text-align:center'>DANH SÁCH SẢN PHẨM</div>
-        
             <table class='book-table' style='margin:0 auto; width:70%'>
                 <thead>
                     <th>STT</th>

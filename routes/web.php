@@ -15,8 +15,6 @@ Route::post('/order/create','App\Http\Controllers\OrderController@ordercreate') 
 Route::get('/testemail','App\Http\Controllers\OrderController@testemail');
 
 
-Route::get('/dashboard', function () {
-    //return view('dashboard');
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('laptop/theloai/{id}', function($id) {

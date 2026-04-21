@@ -30,7 +30,7 @@
  <div class="list-laptop">
         @foreach($laptops as $item)
             <div class="laptop shadow-sm bg-white mb-3 rounded" style="border: 1px solid #e0e0e0; position: relative;">
-                <a href="{{ url('laptop/detail/'.$item->id) }}" style="text-decoration: none; color: inherit; display: block;">
+                <a href="{{ url('home/detail/'.$item->id) }}" style="text-decoration: none; color: inherit; display: block;">
                     <div class="p-2 text-center">
                         <img src="{{ asset('storage/image/'.$item->hinh_anh) }}" 
                              alt="{{ $item->tieu_de }}" 

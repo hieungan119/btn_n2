@@ -1,3 +1,7 @@
+<x-laptop-layout>
+    <x-slot name="title">
+        Trang quản lý
+    </x-slot>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -90,3 +94,4 @@
     </script>
 </body>
 </html>
+</x-laptop-layout>

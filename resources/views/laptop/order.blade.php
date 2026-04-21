@@ -37,7 +37,7 @@
                             <td align='center'>{{$key+1}}</td>
                             <td>{{$row->tieu_de}}</td>
                             <td align='center'>{{$quantity[$row->id]}}</td>
-                            <td align='center'>{{number_format($row->gia_ban,0,',','.')}}đ</td>
+                            <td align='center'>{{number_format($row->gia,0,',','.')}}đ</td>
                             <td align='center'>
                                 <form method='post' action = "{{route('cartdelete')}}" >
                                     <input type='hidden' value='{{$row->id}}' name='id'>
@@ -47,7 +47,7 @@
                             </td>
                        </tr>
                        @php
-                            $tongTien +=$quantity[$row->id]*$row->gia_ban;
+                            $tongTien +=$quantity[$row->id]*$row->gia;
                         @endphp
                     @endforeach
                     <tr>

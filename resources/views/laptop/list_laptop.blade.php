@@ -14,7 +14,6 @@
         .header-title { text-align:center; font-weight:bold; font-size: 26px; color: #1a73e8; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px; }
         .btn-add-green { background-color: #28a745; color: white; padding: 8px 20px; border-radius: 5px; text-decoration: none; display: inline-block; transition: 0.3s; border: none; }
         .btn-add-green:hover { background-color: #218838; color: white; text-decoration: none; }
-        .table thead { background-color: #343a40; color: white; }
         .img-product { width: 60px; height: 60px; object-fit: cover; border-radius: 6px; border: 1px solid #ddd; }
     </style>
 </head>
@@ -33,7 +32,7 @@
                     </a>
                 </div>
 
-                <table id="caycanh-table" class="table table-bordered table-hover w-100">
+                <table id="laptop-table" class="table table-bordered table-hover w-100">
                     <thead>
                         <tr>
                             <th>Tiêu đề</th>
@@ -85,7 +84,7 @@
 
     <script>
     $(document).ready(function() {
-        $('#caycanh-table').DataTable({
+        $('#laptop-table').DataTable({
             responsive: true,
             pageLength: 10, 
             lengthMenu: [10, 25, 50, 100], 

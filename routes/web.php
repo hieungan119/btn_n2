@@ -5,6 +5,8 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ManagementController;
 use App\Http\Controllers\MnhuController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NhienController;
+
 
 Route::get('/', [HomeController::class, 'index']);
 Route::post('/cart/delete','App\Http\Controllers\OrderController@cartdelete')->name('cartdelete');
@@ -26,6 +28,11 @@ Route::get('/dashboard', function () {
     return redirect('/');           
 
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+
+
+Route::get('home/detail/{id}','App\Http\Controllers\NhienController@detail');
+Route::post('/cart/add','App\Http\Controllers\NhienController@cartadd')->name('cartadd');
 
 Route::get('/laptop/list', [ManagementController::class, 'list_laptop'])->name('laptop.list');
 
